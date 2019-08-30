@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({onSubmit, type}) => {
+const Form = ({onFormSubmit, type}) => {
   const nameRef = React.createRef(); 
 
 
@@ -9,11 +9,12 @@ const Form = ({onSubmit, type}) => {
 
     const item = { 
       name: nameRef.current.value,
-      quantity: 0, 
+      quantity: 1, 
       type: type,
     }
+    
     nameRef.current.value = '' 
-    onSubmit(item)
+    onFormSubmit(item)
   }
   return (
    <form id="newItem" className="newitem" auto-complete="off" onSubmit={handleSubmit}>

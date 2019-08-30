@@ -62,7 +62,6 @@ h1 {
 .filters input:checked + label {
     border-bottom: 3px solid black;
 }
-
 .cat-new {
     font: 0.5em helvetica;
     display: inline-block;

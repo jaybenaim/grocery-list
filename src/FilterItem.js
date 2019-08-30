@@ -5,7 +5,7 @@ const FilterItem = ({ filter, id, handleFilterSelected }) => {
 
   return (
     <li>
-      <input type="radio" name="category" value={ value } id={ id } defaultChecked />
+      <input type="radio" name="category" value={ value } id={ id } />
       <label htmlFor="filter0" onClick={()=>handleFilterSelected(value)} >{ name }</label>
     </li>
   );
